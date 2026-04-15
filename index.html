@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Haris Hussain — AI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- BACKGROUND GRID -->
+  <div class="bg-grid"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">MHH<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resume" class="nav-btn">Resume</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#resume" class="mobile-link">Resume</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="line-reveal">Muhammad</span>
+        <span class="line-reveal delay-1">Haris <span class="name-accent">Hussain</span></span>
+      </h1>
+      <div class="hero-tagline">
+        <span class="tag-prefix">// </span>
+        <span id="typewriter"></span><span class="caret">|</span>
+      </div>
+      <p class="hero-sub fade-up">
+        AI Student at SZABIST University — crafting intelligent systems<br>
+        at the intersection of vision, language, and machine intelligence.
+      </p>
+      <div class="hero-actions fade-up delay-2">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-socials fade-up delay-3">
+        <a href="https://github.com/MuhammadHarisHussain" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/muhammadharishussain/" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="terminal-card">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">haris@ai-lab: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-green">➜</span> <span class="t-blue">~</span> python train.py</p>
+          <p><span class="t-dim">Epoch [1/10] Loss: 0.8432</span></p>
+          <p><span class="t-dim">Epoch [5/10] Loss: 0.3211</span></p>
+          <p><span class="t-dim">Epoch [10/10] Loss: 0.0874</span></p>
+          <p><span class="t-purple">✓ Model trained. Accuracy: 97.4%</span></p>
+          <p><span class="t-green">➜</span> <span class="t-blue">~</span> <span class="blink-cursor">█</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Turning data into <span class="accent">intelligence</span></h2>
+          <p>I'm Muhammad Haris Hussain, an Artificial Intelligence student at SZABIST University, passionate about building systems that think, see, and communicate. My work spans computer vision, natural language processing, and full-stack AI application development.</p>
+          <p>From deploying custom GPT assistants to engineering smart management systems, I bridge the gap between research-grade AI and real-world usability. I believe the best AI is invisible — it just makes things work better.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">AI Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1</span>
+              <span class="stat-label">University</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal delay-1">
+          <div class="edu-card">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <div class="edu-info">
+              <span class="edu-degree">B.S. Artificial Intelligence</span>
+              <span class="edu-school">SZABIST University</span>
+              <span class="edu-status">Currently Enrolled</span>
+            </div>
+          </div>
+          <div class="focus-areas">
+            <span class="focus-label">Focus Areas</span>
+            <div class="focus-tags">
+              <span>Computer Vision</span>
+              <span>NLP / LLMs</span>
+              <span>Deep Learning</span>
+              <span>ML Systems</span>
+              <span>Full-Stack AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">02 / Projects</div>
+      <h2 class="section-title reveal">Things I've <span class="accent">built</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🔧</div>
+            <a href="https://github.com/MuhammadHarisHussain/FixTrack" target="_blank" rel="noopener" class="project-link-btn" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">FixTrack</h3>
+          <p class="project-desc">A smart maintenance and issue-tracking system designed to streamline repair workflows. Enables logging, assignment, and resolution tracking of maintenance tasks with a clean interface.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Firebase</span><span>Web App</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1 featured">
+          <div class="project-featured-badge">Featured</div>
+          <div class="project-header">
+            <div class="project-icon">🏥</div>
+            <a href="https://github.com/MuhammadHarisHussain/ViitalCare-Custom-GPT" target="_blank" rel="noopener" class="project-link-btn" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">ViitalCare Custom GPT</h3>
+          <p class="project-desc">A domain-specific GPT assistant tailored for healthcare. Leverages custom fine-tuning and prompt engineering to deliver accurate, context-aware medical information and patient support.</p>
+          <div class="project-tags">
+            <span>GPT API</span><span>NLP</span><span>OpenAPI</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-header">
+            <div class="project-icon">🏨</div>
+            <a href="https://github.com/MuhammadHarisHussain/AI-Hotel-Management-System" target="_blank" rel="noopener" class="project-link-btn" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">AI Hotel Management System</h3>
+          <p class="project-desc">An AI-powered hospitality management platform automating reservations, guest services, and operational analytics. Uses ML to predict occupancy and optimize room allocation.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Machine Learning</span><span>SQL</span><span>Flask</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/MuhammadHarisHussain" target="_blank" rel="noopener" class="btn-ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          See all on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">03 / Skills</div>
+      <h2 class="section-title reveal">My <span class="accent">arsenal</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">⚡</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Python</span><span>C++</span><span>C#</span><span>Java</span>
+            <span>JavaScript</span><span>HTML5</span><span>PowerShell</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-1">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🧠</span>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span>
+            <span>OpenCV</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-2">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🌐</span>
+            <h3>Web & Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Flask</span><span>Streamlit</span><span>WordPress</span><span>Firebase</span>
+            <span>OpenAPI Spec</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-1">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🗄️</span>
+            <h3>Databases & Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span>AWS</span><span>Firebase</span><span>MySQL</span>
+            <span>SQLite</span><span>MS SQL Server</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-2">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🎨</span>
+            <h3>Design & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Figma</span><span>Canva</span><span>Blender</span>
+            <span>Adobe Photoshop</span><span>Adobe Illustrator</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-3">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🔩</span>
+            <h3>Hardware & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Arduino</span><span>Raspberry Pi</span><span>Cisco</span>
+            <span>GitHub</span><span>Anaconda</span><span>Twilio</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="resume-banner reveal">
+        <div class="resume-text">
+          <span class="resume-eyebrow">Resume</span>
+          <h2>Want the full picture?</h2>
+          <p>Download my resume for a complete overview of my experience, education, and skills.</p>
+        </div>
+        <a href="YOUR_RESUME_LINK_HERE" class="btn-primary resume-btn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">04 / Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Let's <span class="accent">connect</span></h2>
+          <p>I'm open to internships, collaborations, or just a good conversation about AI. Drop me a message and I'll get back to you.</p>
+          <div class="contact-items">
+            <a href="mailto:harishussain1258@gmail.com" class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-val">harishussain1258@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/MuhammadHarisHussain" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-val">MuhammadHarisHussain</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammadharishussain/" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-val">muhammadharishussain</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal delay-1">
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="submitBtn">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">MHH<span class="accent">.</span></span>
+      <span class="footer-copy">© 2025 Muhammad Haris Hussain. Built with code & curiosity.</span>
+      <div class="footer-links">
+        <a href="https://github.com/MuhammadHarisHussain" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammadharishussain/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
